@@ -5,7 +5,7 @@ import java.util.concurrent.locks.ReentrantLock;
 
 public class TestFair {
     public static volatile int race=0;
-    public static ReentrantLock lock = new ReentrantLock(true); // 改成false会好100倍
+    public static ReentrantLock lock = new ReentrantLock(false); // 改成false会好100倍
     public static void increase(){
         lock.lock();
         race++;    //变量自增操作

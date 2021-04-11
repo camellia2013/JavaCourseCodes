@@ -4,7 +4,7 @@ package java0.conc0301.sync;
 public class Thread2 {
 
     public void m4t1() {
-        synchronized (this) {
+        synchronized (Thread2.class) {
             int i = 5;
             while (i-- > 0) {
                 System.out.println(Thread.currentThread().getName() + " : " + i);
@@ -39,8 +39,8 @@ public class Thread2 {
                 myt2.m4t2();
             }
         }, "t2");
-        t2.start();
         t1.start();
+        t2.start();
     }
 
 }

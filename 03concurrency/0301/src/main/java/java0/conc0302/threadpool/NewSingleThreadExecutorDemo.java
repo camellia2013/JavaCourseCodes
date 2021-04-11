@@ -14,6 +14,7 @@ public class NewSingleThreadExecutorDemo {
             final int no = i;
             executorService.execute(() -> {
                 System.out.println("start:" + no);
+                System.out.println(no + "---" + Thread.currentThread().getName());
                 try {
                     Thread.sleep(1000L);
                 } catch (InterruptedException e) {
