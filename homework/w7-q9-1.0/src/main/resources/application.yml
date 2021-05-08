@@ -1,0 +1,12 @@
+springboot:
+  datasource:
+    master:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://10.48.172.211:3306/invoice
+      username: invoice_test
+      password: invoice_test99
+    slave:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      jdbc-url: jdbc:mysql://10.48.172.211:3306/invoice
+      username: invoice_test
+      password: invoice_test99
